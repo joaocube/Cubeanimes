@@ -1,0 +1,323 @@
+/*TODAS AS INFORMACOES ABAIXO DAS SEASONS*/
+.infoAnime-bg {
+  width: 100%;
+  background-color: var(--cor-0);
+}
+
+.infoAnime-container {
+  margin-left: auto;
+  margin-right: auto;
+}
+.infoAnime-conteudo {
+  position: relative;
+}
+.infoAnime-conteudo .bannerCapa {
+  height: 660px;
+  filter: brightness(70%);
+  -webkit-mask-image: linear-gradient(
+    to top,
+    transparent 5%,
+    rgb(14, 14, 14) 100%
+  );
+}
+
+.geral-infoanime {
+  position: absolute;
+  max-width: 500px;
+  left: 80px;
+  top: 100px;
+}
+
+/*CONFIGURA TITULO NO CARD - H1*/
+.infoAnime-conteudo .title-anime {
+  max-width: 30ch;
+  font-size: 3.5rem;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.infoAnime-conteudo .title-anime2 {
+  padding-bottom: 10px;
+  max-width: 30ch;
+  font-family: "Poppins", Helvetica, Arial, sans-serif;
+  text-transform: capitalize;
+}
+
+.infoAnime-conteudo .descricao-anime {
+  margin-top: 20px;
+  line-height: 22px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 10; /* NUMERO DE LINHAS A MOSTRA */
+  -webkit-box-orient: vertical;
+}
+
+/* PARTE 2 - SECTION DA SEASON */
+.seasons-bg {
+  background: linear-gradient(to bottom, var(--cor-0), var(--cor-10));
+  padding-bottom: 100px;
+}
+.seasons-conteudo {
+  margin: 40px 80px 0px 80px;
+  max-width: 1800px;
+}
+
+/*TUDO SOBRE SEASONS*/
+.seasons {
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  gap: 20px;
+}
+/*CARD SOBRE AS TEMPORADAS*/
+.season {
+  background-color: var(--cor-10);
+  height: 180px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+  border: 2px solid rgb(32, 34, 41);
+  border-radius: 4px;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  transition: linear 0.3s;
+}
+.season:hover {
+  border: 2px solid var(--cor-7);
+}
+.areatext-season {
+  left: 10px;
+  top: 70%;
+  position: absolute;
+}
+
+@media (max-width: 1440px) {
+  .infoAnime-bg {
+    width: 100%;
+    overflow: hidden;
+  }
+  .infoAnime-conteudo .bannerCapa {
+    filter: brightness(70%);
+    -webkit-mask-image: linear-gradient(
+      to top,
+      transparent 5%,
+      rgb(14, 14, 14) 100%
+    );
+    height: 450px;
+  }
+  .geral-infoanime {
+    position: absolute;
+    left: 20px;
+    top: 25%;
+  }
+  /*CONFIGURA TITULO NO CARD - H1*/
+  .infoAnime-conteudo .title-anime {
+    max-width: 30ch;
+    font-size: 3rem;
+  }
+  .infoAnime-conteudo .title-anime2 {
+    display: none;
+  }
+  .infoAnime-conteudo .descricao-anime {
+    margin-top: 20px;
+    font-size: 1rem;
+    max-width: 580px;
+  }
+  .geral-infoanime .categorias {
+    display: none;
+  }
+  .seasons-bg {
+    margin: 40px 40px 100px 40px;
+  }
+  .seasons-conteudo h3 {
+    color: #fff;
+  }
+  /*TUDO SOBRE SEASONS*/
+  .seasons {
+    grid-template-columns: repeat(4, auto);
+    gap: 20px;
+    position: relative;
+  }
+}
+@media (max-width: 1200px) {
+  .infoAnime-bg {
+    width: 100%;
+    overflow: hidden;
+  }
+  .infoAnime-conteudo .bannerCapa {
+    filter: brightness(70%);
+    -webkit-mask-image: linear-gradient(
+      to top,
+      transparent 5%,
+      rgb(14, 14, 14) 100%
+    );
+    height: 450px;
+  }
+  .geral-infoanime {
+    position: absolute;
+    left: 20px;
+    top: 25%;
+  }
+  /*CONFIGURA TITULO NO CARD - H1*/
+  .infoAnime-conteudo .title-anime {
+    max-width: 30ch;
+    font-size: 3rem;
+  }
+  .infoAnime-conteudo .title-anime2 {
+    display: none;
+  }
+  .infoAnime-conteudo .descricao-anime {
+    margin-top: 20px;
+    font-size: 1rem;
+    max-width: 580px;
+  }
+  .geral-infoanime .categorias {
+    display: none;
+  }
+  .seasons-bg {
+    margin: 0px;
+  }
+  .seasons-conteudo {
+    margin: 20px;
+  }
+  .seasons-conteudo h3 {
+    color: #fff;
+  }
+  /*TUDO SOBRE SEASONS*/
+  .seasons {
+    grid-template-columns: repeat(4, auto);
+    gap: 20px;
+    position: relative;
+  }
+}
+@media (max-width: 800px) {
+  .infoAnime-bg {
+    width: 100%;
+    overflow: hidden;
+  }
+  .infoAnime-conteudo .bannerCapa {
+    filter: brightness(70%);
+    -webkit-mask-image: linear-gradient(
+      to top,
+      transparent 5%,
+      rgb(14, 14, 14) 100%
+    );
+    height: 450px;
+  }
+  .bannerCapa img {
+    object-fit: cover;
+    width: 100%;
+  }
+  .geral-infoanime {
+    position: absolute;
+    left: 20px;
+    top: 25%;
+  }
+  /*CONFIGURA TITULO NO CARD - H1*/
+  .infoAnime-conteudo .title-anime {
+    max-width: 30ch;
+    font-size: 3rem;
+  }
+  .infoAnime-conteudo .title-anime2 {
+    display: none;
+  }
+  .infoAnime-conteudo .descricao-anime {
+    margin-top: 20px;
+    font-size: 1rem;
+    max-width: 580px;
+  }
+  .geral-infoanime .categorias {
+    display: none;
+  }
+  .seasons-bg {
+    background: transparent;
+    padding-bottom: 0px;
+  }
+  .seasons-conteudo {
+    margin: 20px;
+  }
+  /*TUDO SOBRE SEASONS*/
+  .seasons {
+    grid-template-columns: repeat(3, auto);
+    gap: 10px;
+    position: relative;
+  }
+  /*CARDS SOBRE AS TEMPORADAS*/
+  .season {
+    cursor: pointer;
+  }
+}
+@media (max-width: 600px) {
+  .infoAnime-conteudo .bannerCapa {
+    height: 400px;
+  }
+  .infoAnime-conteudo .bannerCapa img {
+    object-fit: cover;
+    height: 400px;
+  }
+  .infoAnime-conteudo .descricao-anime {
+    font-size: 0.9rem;
+    max-width: 480px;
+  }
+  .seasons-bg {
+    margin: 0px;
+    padding-bottom: 100px;
+  }
+  .seasons-conteudo {
+    margin: 10px;
+  }
+  .seasons-conteudo h3 {
+    margin-left: 20px;
+  }
+  /*TUDO SOBRE SEASONS*/
+  .seasons {
+    grid-template-columns: repeat(2, auto);
+    gap: 10px;
+    position: relative;
+    margin: 10px;
+  }
+}
+@media (max-width: 500px) {
+  .infoAnime-conteudo .bannerCapa {
+    height: 400px;
+  }
+  .infoAnime-conteudo .bannerCapa img {
+    object-fit: cover;
+    height: 400px;
+  }
+  .infoAnime-conteudo .descricao-anime {
+    max-width: 400px;
+  }
+  .seasons-bg {
+    margin: 0px;
+  }
+  .seasons-conteudo h3 {
+    margin-left: 20px;
+    margin-top: 40px;
+  }
+}
+@media (max-width: 400px) {
+  .infoAnime-conteudo {
+    height: auto;
+  }
+  .infoAnime-conteudo .descricao-anime {
+    max-width: 300px;
+    height: auto;
+    line-height: 1.3;
+    font-size: 0.8rem;
+  }
+  .seasons-bg {
+    margin: 0px;
+  }
+  .seasons-conteudo h3 {
+    margin-left: 20px;
+    margin-top: 40px;
+  }
+  /*TUDO SOBRE SEASONS*/
+  .season {
+    height: 110px;
+  }
+  .season .areatext-season {
+    top: 50px;
+  }
+}

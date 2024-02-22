@@ -1,0 +1,159 @@
+/* TITULO DA AREA */
+.cardsH-container h3::before {
+  content: "";
+  display: inline-block;
+  width: 1rem;
+  height: 4px;
+  background-color: var(--cor-3);
+  margin: 0px 10px;
+  transition: width 0.3s;
+}
+.cardsH-container:hover h3::before {
+  width: 30px;
+}
+.title-area h3 {
+  max-width: 1600px;
+  margin-bottom: 10px;
+}
+
+.title-area {
+  display: flex;
+  margin-bottom: 5px;
+}
+
+/* VER TODOS TEXT BUTTON */
+.title-area a {
+  margin-left: auto;
+  padding: 5px;
+  height: 20px;
+  opacity: 0.7;
+  font-size: 0.8rem;
+  text-align: center;
+  align-items: center;
+  border-radius: 8px;
+  border: 1px solid #f9f9fc;
+}
+.title-area a:hover {
+  border: 1px solid #cfd0d1;
+  opacity: 1;
+  background-color: #272727;
+}
+
+/* ACIMA TUDO SOBRE TITULO ACIMA DOS ANIMES------------------------------ */
+.cardsH-bg {
+  background-color: none;
+}
+
+.cardsH-container {
+  padding-top: 10px;
+  padding-bottom: 35px;
+}
+
+/* CONTAINER DOS CARDS NA HORIZONTAL */
+.cardsH-conteudo {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cardsH-conteudo ul {
+  display: flex;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* CONFIGURA COMO UM TODO CARD HORIZONTAL*/
+.cardsH-conteudo ul li {
+  cursor: pointer;
+  width: 300px;
+  height: 170px;
+  background-color: var(--cor-10);
+  overflow: hidden;
+  border-radius: 10px;
+  border: 2px solid rgba(83, 83, 83, 0.178);
+}
+
+.cardsH-conteudo ul li img {
+  border-radius: 8px;
+  -webkit-mask-image: linear-gradient(
+    to top,
+    transparent 5%,
+    rgb(27, 27, 27) 80%
+  );
+}
+
+.cardsH-conteudo ul li div {
+  position: relative;
+}
+/* TITULO DO ANIME NO CARD */
+.cardsH-conteudo ul li div .title-cardH {
+  position: absolute;
+  top: 145px;
+  left: 10px;
+  z-index: 10;
+  max-width: 28ch;
+  text-transform: capitalize;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+/*ANIMACAO CARD*/
+.cardsH-conteudo ul li:hover {
+  border: 2px solid #ffffff;
+  transition: 0.3s ease-in-out;
+  transform: scale(1.046);
+  border-radius: 10px;
+}
+
+/*ANIMACAO NA IMAGEM DO CARD, ESCURECE MAIS A IMAGEM COM GRADIENT*/
+.cardsH-conteudo ul li img:hover {
+  transition: 0.5s;
+  -webkit-mask-image: linear-gradient(
+    to top,
+    transparent 20%,
+    rgb(27, 27, 27) 130%
+  );
+  mask-image: linear-gradient(to top, transparent 20%, rgb(27, 27, 27) 130%);
+}
+
+@media (max-width: 1200px) {
+  .title-area a {
+    font-size: 0.5rem;
+  }
+
+  .cardsH-conteudo {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px 20px;
+  }
+  .cardsH-conteudo ul {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    overflow-x: scroll;
+    margin-left: 20px;
+  }
+}
+@media (max-width: 800px) {
+  .cardsH-bg {
+    width: 100%;
+    overflow: hidden;
+  }
+  .title-area a {
+    font-size: 0.5rem;
+  }
+
+  .cardsH-conteudo {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px 20px;
+  }
+  .cardsH-conteudo ul {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    overflow-x: scroll;
+    margin-left: 20px;
+  }
+}

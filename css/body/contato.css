@@ -1,0 +1,41 @@
+.contato-bg {
+  padding-top: 160px;
+  height: 650px;
+  background-color: var(--cor-0);
+}
+.contato-container {
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.contato-conteudo {
+  border-radius: 8px;
+  padding: 40px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+}
+
+.contato-conteudo .areatitle-contato {
+  text-align: center;
+  max-width: 800px;
+}
+.areatitle-contato p {
+  margin-top: 10px;
+}
+.areabtn-contato {
+  margin-top: 20px;
+}
+.areabtn-contato input {
+  background-color: var(--cor-3);
+  padding: 20px 40px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+@media (max-width: 800px) {
+  .contato-bg {
+    height: 570px;
+  }
+}

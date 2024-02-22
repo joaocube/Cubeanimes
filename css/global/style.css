@@ -1,0 +1,22 @@
+/* GLOBAL, TEM EM TODAS PAGINAS */
+@import "../global/global.css";
+@import "../utilitarios.css/cores.css";
+@import "../utilitarios.css/tipografia.css";
+@import "../global/header.css";
+@import "../global/footer.css";
+
+/* QUE TEM NO INICIO DO SITE */
+@import "../home/slides.css";
+@import "../home/popup.css";
+@import "../home/modals.css";
+@import "../home/aviso.css";
+@import "../home/cardsH.css";
+@import "../home/cardsV.css";
+@import "../home/premium.css";
+
+/* OUTRAS PAGINAS */
+@import "../body/cubepass.css";
+@import "../body/sobre.css";
+@import "../body/animes.css";
+@import "../body/login.css";
+@import "../body/contato.css";

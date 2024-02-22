@@ -1,0 +1,99 @@
+/*CONFIGURA TUDO SOBRE O POPUP*/
+.popup {
+  background: rgba(14, 14, 14, 0.6);
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  justify-content: center;
+  align-items: center;
+  z-index: 30;
+  display: none;
+  opacity: 0; /*COMECA SEM OPACIDADE E DEPOIS DE 
+X SEGUNDOS O POP UP APARECE AUTOMATICO*/
+}
+
+/*CONFIGURA TUDO SOBRE O CONTEUDO DO CARD DO POPUP*/
+.contentBox {
+  top: 80%;
+  right: -25%;
+  transform: translate(50%, -50%);
+  position: relative;
+  width: 500px;
+  height: 180px;
+  background: #f9f9fc;
+  border-radius: 10px;
+  display: flex;
+  box-shadow: 0 5px 15px #2c2c2c;
+}
+
+/*CONFIGURA TUDO DO CONTEUDO NO POPUP*/
+.contentBox .content-pop {
+  position: relative;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contentBox .content-pop .pop-h3 {
+  color: #1c1c1c;
+  line-height: 1em;
+  font-size: 1.2rem;
+  margin-bottom: 6px;
+}
+
+.contentBox .content-pop .pop-h2 {
+  font-size: 0.9rem;
+  margin-top: 5px;
+  color: #383838;
+  line-height: 1rem;
+}
+
+.contentBox .content-pop .pop-p {
+  color: #1c1c1c;
+}
+
+/*BOTAO DE NOTIFICACAO DENTRO DO POP UP*/
+.contentBox .content-pop .pop-btn {
+  width: 180px;
+  height: 40px;
+  font-size: 18px;
+  padding: 10px;
+  background-color: #f2000d;
+  color: #ffffff;
+  margin-top: 15px;
+  border: none;
+  text-decoration: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/*FECHAR POPUP*/
+.close {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  width: 40px;
+  height: 40px;
+  background: #dfdfdf url(../publics/imgs/close.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 15px;
+  cursor: pointer;
+  border-radius: 50%;
+  z-index: 11;
+}
+
+@media (max-width: 800px) {
+  .popup {
+    display: none;
+    background: none;
+  }
+  .content-pop {
+    display: none;
+  }
+  .contentBox {
+    display: none;
+  }
+}/*# sourceMappingURL=popup.css.map */

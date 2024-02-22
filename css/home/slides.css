@@ -1,0 +1,249 @@
+.slider-bg {
+  width: 100%;
+  height: 100vh;
+  padding-bottom: 100px;
+}
+.slider {
+  width: 100%;
+  overflow: hidden;
+}
+.slider-container {
+  position: relative;
+}
+.slider-container .mouse {
+  bottom: 50px;
+  left: 50%;
+  opacity: 0.8;
+  filter: invert();
+  position: absolute;
+  animation: go-back 1s infinite alternate;
+}
+@keyframes go-back {
+  from {
+    transform: translateY(30px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+/* AREA DA IMAGEM BACKGROUND */
+.slide {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background-color: var(--cor-0);
+}
+.slide-img img {
+  -webkit-mask-image: linear-gradient(
+    to top,
+    transparent 20%,
+    rgb(27, 27, 27) 70%
+  );
+}
+/* AREA DE INFO DO SLIDE, CATEGORIAS E TUDO */
+.slide .slide-info {
+  width: 600px;
+  left: 150px;
+  top: 10%;
+  position: absolute;
+}
+.slide-info .slide-logoanime {
+  overflow: hidden;
+  width: 350px;
+  height: 200px;
+}
+.slide-logoanime img {
+  width: 100%;
+}
+.slide-logoanime .logo3,
+.logo4 {
+  margin-top: 50px;
+  width: 100%;
+}
+.slide-logoanime .logo5 {
+  margin-top: 90px;
+  width: 100%;
+}
+/*CONFIGURA - SINOPSE*/
+.slide-info .sinopse {
+  margin-top: 20px;
+  width: 500px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 5; /* NUMERO MAX DE LINHAS */
+  -webkit-box-orient: vertical;
+}
+/*GENEROS DOS ANIMES*/
+.slide-info .categorias {
+  margin-top: 20px;
+  text-transform: uppercase;
+}
+.categorias span {
+  background-color: rgba(0, 0, 0, 0.4);
+  border: 1px ridge #ffffff;
+  border-radius: 15px;
+  padding: 8px;
+}
+/*CONFIGURA BOTAO DO SLIDE*/
+.slide-info .btn-slide {
+  text-align: center;
+  background-color: var(--cor-3);
+  margin-top: 20px;
+  border-radius: 20px;
+  padding: 10px;
+  width: 140px;
+}
+.slide-info .btn-slide:hover {
+  scale: 1.1;
+  transition: 0.3s ease-in-out;
+}
+
+@media (max-width: 1440px) {
+  .slider {
+    width: 100%;
+    overflow: hidden;
+  }
+  /* CADA SLIDE-ITEM */
+  .slide {
+    position: relative;
+  }
+  /* AREA DA IMAGEM BACKGROUND */
+  .slide .slide-img {
+    width: 100%;
+  }
+  .slide .slide-img img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    object-position: center;
+  }
+  /* AREA DE INFO DO SLIDE, CATEGORIAS E TUDO */
+  .slide .slide-info {
+    width: 600px;
+    left: 60px;
+    top: 10%;
+    position: absolute;
+  }
+  .slide-info .slide-logoanime {
+    overflow: hidden;
+    width: 300px;
+    height: 200px;
+  }
+  .slide-logoanime img {
+    width: 100%;
+  }
+  .slide-logoanime .logo5 {
+    width: 100%;
+    margin-top: 90px;
+  }
+}
+@media (max-width: 1200px) {
+  .slider-bg {
+    padding-bottom: 50px;
+    height: 700px;
+  }
+  .slider {
+    width: 100%;
+    overflow: hidden;
+    height: 700px;
+  }
+  /* CADA SLIDE-ITEM */
+  .slide {
+    height: 700px;
+    position: relative;
+  }
+  /* AREA DA IMAGEM BACKGROUND */
+  .slide .slide-img {
+    width: 100%;
+    height: 700px;
+  }
+  .slide .slide-img img {
+    width: 100%;
+    height: 700px;
+    object-fit: cover;
+    object-position: center;
+  }
+  /* AREA DE INFO DO SLIDE, CATEGORIAS E TUDO */
+  .slide .slide-info {
+    width: 600px;
+    left: 60px;
+    top: 10%;
+    position: absolute;
+  }
+  .slide-info .sinopse {
+    -webkit-line-clamp: 4; /* NUMERO MAX DE LINHAS */
+  }
+  .slide-info .slide-logoanime {
+    overflow: hidden;
+    width: 300px;
+    height: 200px;
+  }
+  .slide-logoanime img {
+    width: 100%;
+  }
+  .slide-logoanime .logo5 {
+    width: 100%;
+    margin-top: 90px;
+  }
+}
+@media (max-width: 800px) {
+  .slider-bg {
+    height: 400px;
+    padding-bottom: 0px;
+  }
+  .slider {
+    width: 100%;
+    overflow: hidden;
+  }
+  /* CADA SLIDE-ITEM */
+  .slide {
+    position: relative;
+    height: 400px;
+  }
+  .slider-container .mouse {
+    display: none;
+  }
+  /* AREA DA IMAGEM BACKGROUND */
+  .slide .slide-img {
+    width: 100%;
+  }
+  .slide .slide-img img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    object-position: right;
+  }
+  /* AREA DE INFO DO SLIDE, CATEGORIAS E TUDO */
+  .slide .slide-info {
+    width: 500px;
+    margin-top: 100px;
+    left: 20px;
+    top: 0px;
+    position: absolute;
+  }
+  .slide-info .sinopse {
+    display: none;
+  }
+  .slide-info .categorias {
+    display: none;
+  }
+  .slide-info .slide-logoanime {
+    width: 200px;
+    height: 160px;
+  }
+  .slide-logoanime img {
+    width: 100%;
+    margin-top: 60px;
+  }
+  .slide-logoanime .logo3 {
+    margin-top: 80px;
+  }
+  .slide-logoanime .logo4 {
+    margin-top: 80px;
+  }
+  .slide-logoanime .logo5 {
+    width: 100%;
+    margin-top: 110px;
+  }
+}

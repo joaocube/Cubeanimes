@@ -1,0 +1,82 @@
+/*CARD NO FINAL DO MAIN - PASS MENSAL*/
+.premium-bg {
+  margin-top: 100px;
+  background: linear-gradient(to bottom, var(--cor-0), var(--cor-10));
+}
+
+.premium-container {
+  margin: 0 auto;
+}
+
+.premium-conteudo {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+  border-top: 2px solid var(--cor-3);
+  border-radius: 0px 0px 8px 8px;
+  width: 550px;
+  height: 340px;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.premium-conteudo .premium-texts {
+  padding: 40px;
+  text-align: center;
+}
+
+.premium-texts p {
+  margin-top: 10px;
+  padding: 0px 40px;
+}
+.premium-texts button {
+  cursor: pointer;
+  margin-top: 20px;
+  border-radius: 4px;
+  padding: 16px 80px;
+  background-color: var(--cor-3);
+}
+.premium-texts button:hover {
+  background: linear-gradient(to right, var(--cor-3), #831212);
+}
+
+@media (max-width: 800px) {
+  .premium-bg {
+    margin-top: 100px;
+  }
+  .premium-conteudo {
+    width: auto;
+    height: auto;
+    margin: 0px 40px;
+    padding: 20px 30px;
+  }
+  .premium-conteudo .premium-texts {
+    padding: 20px;
+    text-align: center;
+  }
+  .premium-btn {
+    font-size: 1rem;
+    padding: 0px 40px;
+  }
+}
+@media (max-width: 440px) {
+  .premium-bg {
+    margin-top: 100px;
+  }
+  .premium-conteudo {
+    width: auto;
+    height: auto;
+    margin: 0px 20px;
+    padding: 20px;
+  }
+  .premium-conteudo .premium-texts {
+    padding: 20px;
+    text-align: center;
+  }
+  .premium-btn {
+    margin-top: 20px;
+    font-size: 1rem;
+    padding: 10px 40px;
+  }
+}

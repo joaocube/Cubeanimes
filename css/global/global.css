@@ -1,0 +1,70 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--cor-0);
+  font-family: "Poppins", "Roboto", Arial, sans-serif;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  overscroll-behavior-y: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+ul,
+li,
+ol,
+a,
+p {
+  margin: 0px;
+  padding: 0px;
+  border: none;
+  list-style: none;
+  text-decoration: none;
+}
+p::selection {
+  background-color: var(--cor-3);
+  color: var(--cor-8);
+}
+
+/*COR DOS TEXTOS NO HEADER*/
+a {
+  display: block;
+  color: #ffffff;
+}
+
+img {
+  max-width: 100%;
+}
+button {
+  border: none;
+}
+
+/*TUDO SOBRE A BARRA DE SCROLL LATERAL*/
+body::-webkit-scrollbar {
+  width: 5px;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: var(--cor-3);
+}
+
+body::-webkit-scrollbar-track {
+  background-color: var(--cor-6);
+}
+
+.sec-geral {
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1600px;
+}
+
+input {
+  caret-color: var(--cor-3);
+}

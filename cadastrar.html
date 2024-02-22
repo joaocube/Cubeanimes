@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="./css/global/style.css" media="screen" />
+  <meta name="description" content="O Melhor Site de Animes para Download">
+  <link rel="icon" type="image/ico" href="./favicon.png">
+  <title>CubeAnimes - Download de Animes</title>
+</head>
+
+<body>
+
+  <header class="header-bg"></header>
+
+  <main>
+    <section class="login-bg">
+      <article class="login-container">
+        <div class="areatitle-login cor-7">
+          <h1 class="title-login font-2-xl cor-9">Bem-vindo à Cube Animes</h1>
+          <p class="cor-7">Crie sua conta abaixo :)</p>
+        </div>
+
+        <div class="login-conteudo">
+          <form action="#">
+            <div class="area-username">
+              <label class="input-label cor-9" for="text">Nome de Usuario:</label>
+              <input type="text" class="input-field cor-9" id="username" name="user_name" autocomplete="current-username" placeholder="Ex: Nickname" required>
+            </div>
+            <div class="area-email cor-8">
+              <label class="input-label cor-9" for="email">Email:</label>
+              <input type="text" class="input-field cor-9" id="email" name="user_cadastrar" autocomplete="current-username" placeholder="Ex: nome@gmail.com" required>
+            </div>
+
+            <div class="area-senha cor-8">
+              <label class="input-label cor-9" for="email">Senha:</label>
+              <input type="password" name="password" autocomplete="current-password" id="Password" class="cor-8" placeholder="Crie sua senha" required />
+              <i class="fa fa-eye" onclick="mouseoverPass();" onmouseout="mouseoutPass();" id="olho"></i>
+            </div>
+
+            <div class="area-cadastrar">
+              <button class="submit-eye cor-9 font-2-mR" type="submit">Cadastrar</button>
+              <a href="login.html" class=" criar-conta cor-3">
+                <p>Ja tem conta? Faça Login!</p>
+              </a>
+            </div>
+          </form>
+        </div> <!-- FIM LOGIN CONTEUDO -->
+
+      </article>
+    </section>
+  </main>
+
+  <footer class="footer-bg"></footer>
+
+  <script src="./js/login.js"></script>
+  <script src="./js/script.js"></script>
+</body>
+
+</html>

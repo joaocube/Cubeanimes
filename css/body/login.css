@@ -1,0 +1,133 @@
+.login-bg {
+  padding-top: 180px;
+  height: 650px;
+  background-color: var(--cor-0);
+}
+.login-container {
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+  height: 590px;
+}
+.login-container .areatitle-login {
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.areatitle-login h1,
+p {
+  margin-bottom: 10px;
+}
+/* CONTAINER DO FORM */
+.login-conteudo {
+  margin: 0 auto;
+  max-width: 500px;
+}
+
+/* FORMULARIO GERAL */
+.login-conteudo form {
+  padding: 20px;
+  border-radius: 8px;
+  width: auto;
+}
+.area-username {
+  display: flex;
+  width: 100%;
+  margin-bottom: 20px;
+  position: relative;
+}
+.area-username > label {
+  position: absolute;
+  left: 5px;
+  top: -10px;
+  padding: 0px 5px;
+  background-color: var(--cor-10);
+  font-size: 0.875rem;
+}
+.area-username #username {
+  width: 100%;
+  padding: 20px;
+  border: 1px solid #3b3b3b;
+  background-color: var(--cor-0);
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.area-email {
+  display: flex;
+  width: 100%;
+  margin-bottom: 20px;
+  position: relative;
+}
+.area-email > label {
+  position: absolute;
+  left: 5px;
+  top: -10px;
+  padding: 0px 5px;
+  background-color: var(--cor-10);
+  font-size: 0.875rem;
+}
+.area-email #email {
+  width: 100%;
+  padding: 20px;
+  border: 1px solid #3b3b3b;
+  background-color: var(--cor-0);
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.area-senha {
+  display: flex;
+  width: 100%;
+  margin-bottom: 20px;
+  position: relative;
+}
+.area-senha > label {
+  position: absolute;
+  left: 5px;
+  top: -10px;
+  padding: 0px 5px;
+  background-color: var(--cor-10);
+  font-size: 0.875rem;
+}
+.area-senha #Password {
+  width: 100%;
+  padding: 20px;
+  border: 1px solid #3b3b3b;
+  background-color: var(--cor-0);
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.area-senha #olho {
+  position: absolute;
+  top: 20px;
+  right: 10px;
+  cursor: pointer;
+  width: 20px;
+}
+
+.area-cadastrar {
+  width: 100%;
+  text-align: center;
+}
+.area-cadastrar button {
+  width: 100%;
+  cursor: pointer;
+  margin-right: auto;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  border-radius: 4px;
+  background: var(--cor-3);
+}
+.area-cadastrar a {
+  margin: 20px auto;
+  cursor: pointer;
+}
+
+@media (max-width: 500px) {
+  .areatitle-login h1 {
+    font-size: 1.5rem;
+  }
+}

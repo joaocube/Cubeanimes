@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./css/global/style.css" media="screen" />
+    <meta name="description" content="O Melhor Site de Animes para Download">
+    <link rel="icon" type="image/ico" href="./favicon.png">
+    <title>CubeAnimes - Download de Animes</title>
+</head>
+
+<body>
+
+    <header class="header-bg">
+    </header> <!-- FIM HEADER BG -->
+    <!------------------------------------------------------------------------>
+
+    <main>
+        <div class="cont-etapas">
+            <section class="pass-bg" id="etapa1">
+                <article class="pass-container">
+                    <div class="areatitle-pass cor-7">
+                        <h1 class="title-pass cor-8 font-2-l">Selecione o seu Plano</h1>
+                        <p class="cor-8">Seu plano atual: <strong class="cor-11">Text Placeholder</strong></p>
+                    </div>
+
+                    <div class="pass-conteudo">
+                        <ul class="items-pass" id="listaPass">
+                            <li class="item-pass cor-8 ativo">
+                                <div class="left-textpass font-2-mR">
+                                    <h3>Cube Pass - 30 dias</h3>
+                                    <p class="cor-11">Todos os recursos do site + Cube PLEX</p>
+                                </div>
+                                <div class="price-pass cor-11 font-2-xl">
+                                    <strong class="cor-11">R$12,90</strong>
+                                </div>
+                            </li>
+                            <li class="item-pass cor-8">
+                                <div class="left-textpass font-2-mR">
+                                    <h3>Cube Pass - 60 dias</h3>
+                                    <p class="cor-11">Todos os recursos do site + Cube PLEX</p>
+                                </div>
+                                <div class="price-pass cor-7 font-2-xl">
+                                    <strong class="cor-11">R$21,90</strong>
+                                </div>
+                            </li>
+                            <li class="item-pass cor-8">
+                                <div class="left-textpass font-2-mR">
+                                    <h3>Cube Pass - 90 dias</h3>
+                                    <p class="cor-7">Todos os recursos do site + Cube PLEX</p>
+                                </div>
+                                <div class="price-pass cor-7 font-2-xl">
+                                    <strong class="cor-11">R$31,90</strong>
+                                </div>
+                            </li>
+                        </ul> <!-- FIM ITEMS PASS -->
+                    </div> <!-- FIM PASS CONTEUDO -->
+
+                    <div class="areabtn-pass">
+                        <button id="avancaEtapa1" class="cor-8 font-2-mR">Proximo</button>
+                    </div>
+                </article>
+            </section> <!-- FIM PASS BG -->
+
+            <section class="pay-bg" id="etapa2">
+                <article class="pay-container">
+                    <div class="areatitle-pay cor-7">
+                        <h1 class="title-pay cor-8 font-2-l">Selecione a Forma de Pagamento</h1>
+                    </div>
+
+                    <div class="pay-conteudo">
+                        <ul class='cor-8 font-2-mR'>
+
+                            <li class="item-pay" onclick=" marcarOpcao1()">
+                                <input type="radio" name="pagamento" id="pix" value="Pix" checked />
+                                <label for="pix" class="cor-8 font-2-mR">Pix</label>
+                            </li>
+
+                            <li class="item-pay" onclick=" marcarOpcao2()">
+                                <input type="radio" name="pagamento" id="boleto" value="Boleto" />
+                                <label for="boleto" class="cor-8 font-2-mR">Boleto</label>
+                            </li>
+
+                            <li class="item-pay" onclick=" marcarOpcao3()">
+                                <input type="radio" name="pagamento" id="cartao" value="cartao" />
+                                <label for="cartao" class="cor-8 font-2-mR">Cartao de Credito</label>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="areabtn-pay">
+                        <button id="voltarEtapaBtn" class="cor-8 font-2-mR">Voltar</button>
+                        <button id="avancaEtapa2" action="./" method="post" class="cor-8 font-2-mR">Proximo</button>
+                    </div>
+                </article>
+            </section> <!-- FIM PAY BG -->
+        </div> <!-- FIM CONT ETAPAS -->
+    </main>
+
+    <footer class="footer-bg">
+    </footer>
+    <script src="./js/planos.js"></script>
+    <script src="./js/script.js"></script>
+
+</body>
+
+</html>

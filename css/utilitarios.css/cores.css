@@ -1,0 +1,53 @@
+/*CONFIGURA CORES PARA CHAMAR COM A VARIAVEL*/
+:root {
+  --cor-00: #000000;
+  --cor-0: #0e0e12;
+  --cor-1: #0e0c0c;
+  --cor-2: #161616;
+  --cor-3: #f2000d;
+  --cor-4: #daae1c;
+  --cor-5: #0538a2;
+  --cor-6: #949494;
+  --cor-7: #cfd0d1;
+  --cor-8: #f9f9fc;
+  --cor-9: #ffffff;
+  --cor-10: #1d1d24;
+  --cor-11: #c6c6da;
+}
+
+.cor-0 {
+  color: var(--cor-0);
+}
+.cor-1 {
+  color: var(--cor-1);
+}
+.cor-2 {
+  color: var(--cor-2);
+}
+.cor-3 {
+  color: var(--cor-3);
+}
+.cor-4 {
+  color: var(--cor-4);
+}
+.cor-5 {
+  color: var(--cor-5);
+}
+.cor-6 {
+  color: var(--cor-6);
+}
+.cor-7 {
+  color: var(--cor-7);
+}
+.cor-8 {
+  color: var(--cor-8);
+}
+.cor-9 {
+  color: var(--cor-9);
+}
+.cor-10 {
+  color: var(--cor-10);
+}
+.cor-11 {
+  color: var(--cor-11);
+}

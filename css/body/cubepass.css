@@ -1,0 +1,205 @@
+.pass-bg {
+  background-color: var(--cor-0);
+  padding: 130px 0px;
+  height: 550px;
+}
+.pass-container {
+  margin-left: auto;
+  margin-right: auto;
+  /* background-color: var(--cor-6); */
+  max-width: 1400px;
+  height: auto;
+  border-radius: 16px;
+}
+.pass-container .areatitle-pass {
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: left;
+  max-width: 750px;
+}
+
+.pass-conteudo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pass-conteudo .item-pass {
+  cursor: pointer;
+  display: flex;
+  padding: 30px;
+  margin: 30px 0px;
+  width: 700px;
+  border-radius: 8px;
+  background-color: var(--cor-10);
+}
+.pass-conteudo .item-pass.ativo {
+  background-color: var(--cor-3);
+}
+
+.pass-conteudo .item-pass:hover {
+  background-color: var(--cor-3);
+  transition: ease-in-out 0.3s;
+}
+.item-pass .left-textpass {
+  margin-right: auto;
+}
+.areabtn-pass {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.areabtn-pass button {
+  border: none;
+  cursor: pointer;
+  width: 150px;
+  text-align: center;
+  border-radius: 8px;
+  padding: 20px;
+  background-color: var(--cor-3);
+}
+
+.pay-bg {
+  display: none;
+  background-color: var(--cor-0);
+  padding: 130px 0px;
+  height: 550px;
+}
+.pay-container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1400px;
+  height: auto;
+  border-radius: 16px;
+}
+.pay-container .areatitle-pay {
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: left;
+  max-width: 750px;
+}
+
+.pay-conteudo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pay-conteudo ul .item-pay {
+  cursor: pointer;
+  padding: 30px;
+  margin: 30px 0px;
+  width: 700px;
+  border-radius: 8px;
+  background-color: var(--cor-10);
+}
+
+.areabtn-pay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.areabtn-pay button {
+  border: none;
+  text-align: center;
+  cursor: pointer;
+  width: 150px;
+  border-radius: 8px;
+  padding: 20px;
+  background-color: var(--cor-3);
+}
+
+@media (max-width: 800px) {
+  .pass-bg,
+  .pay-bg {
+    height: 470px;
+  }
+  .pass-container .areatitle-pass {
+    max-width: 400px;
+  }
+  .pass-conteudo .item-pass {
+    padding: 20px;
+    margin: 30px 0px;
+    width: 400px;
+  }
+  .item-pass .left-textpass {
+    font-size: 0.9rem;
+  }
+  .item-pass .price-pass {
+    font-size: 1.4rem;
+  }
+
+  .pay-container .areatitle-pay {
+    max-width: 400px;
+  }
+  .pay-conteudo ul .item-pay {
+    padding: 20px;
+    margin: 30px 0px;
+    width: 400px;
+  }
+}
+
+@media (max-width: 500px) {
+  .pass-bg,
+  .pay-bg {
+    height: 470px;
+  }
+  .pass-container .areatitle-pass {
+    max-width: 360px;
+  }
+  .pass-conteudo .item-pass {
+    padding: 20px;
+    margin: 30px 0px;
+    width: 340px;
+  }
+  .item-pass .left-textpass {
+    font-size: 0.8rem;
+  }
+  .item-pass .price-pass {
+    font-size: 1.2rem;
+  }
+  .areabtn-pass input {
+    padding: 20px 40px;
+  }
+
+  .pay-container .areatitle-pay {
+    max-width: 300px;
+  }
+  .areatitle-pay .title-pay {
+    font-size: 1.2rem;
+  }
+  .pay-conteudo ul .item-pay {
+    padding: 20px;
+    margin: 30px 0px;
+    width: 300px;
+  }
+}
+@media (max-width: 400px) {
+  .pass-container .areatitle-pass {
+    max-width: 300px;
+  }
+  .pass-conteudo .item-pass {
+    padding: 20px;
+    margin: 20px auto;
+    width: 300px;
+  }
+  .item-pass .price-pass {
+    font-size: 1.1rem;
+  }
+  .areabtn-pass input {
+    padding: 20px;
+  }
+
+  .pay-container .areatitle-pay {
+    max-width: 300px;
+  }
+  .areatitle-pay .title-pay {
+    font-size: 1.1rem;
+  }
+  .pay-conteudo ul .item-pay {
+    padding: 20px;
+    margin: 20px auto;
+    width: 300px;
+  }
+}

@@ -1,0 +1,65 @@
+/*CONFIGURA CONTAINER DO SOBRE*/
+.sobre-container {
+  margin: 0 auto;
+  max-width: 1400px;
+  padding: 100px 20px;
+}
+.sobre-container h1 {
+  margin-bottom: 20px;
+}
+.accordion {
+  background-color: #eee;
+  cursor: pointer;
+  padding: 20px;
+  width: 100%;
+  text-align: left;
+  transition: 0.4s ease-in-out;
+}
+
+.active,
+.accordion:hover {
+  background-color: var(--cor-7);
+}
+/* SINAL DE + */
+.accordion:after {
+  content: "\002B";
+  color: var(--cor-3);
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+/* INAL DE - */
+.active:after {
+  content: "\2212";
+  color: var(--cor-5);
+}
+.panel {
+  padding: 0px 20px;
+  margin-bottom: 40px;
+  background-color: var(--cor-9);
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+.panel p {
+  padding: 20px 0px;
+}
+
+@media (max-width: 1200px) {
+  .sobre-container {
+    margin: 40px;
+  }
+}
+@media (max-width: 800px) {
+  .sobre-container {
+    margin: 10px;
+  }
+}
+@media (max-width: 440px) {
+  .accordion {
+    font-size: 0.9rem;
+  }
+  .sobre-container {
+    margin: 0px;
+  }
+}

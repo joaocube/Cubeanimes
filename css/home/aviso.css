@@ -1,0 +1,39 @@
+.aviso-bg {
+  margin: 10px 0px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1600px;
+}
+
+.aviso-container {
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+/* CUIDA DO CONTEUDO - PADDING INTERNO DENTRO DO BORDER */
+.aviso-conteudo {
+  border: 1px dashed #cfd0d1;
+  border-radius: 4px;
+  padding: 10px 10px;
+}
+
+/* TEXTO DE AVISO */
+.aviso-conteudo p {
+  text-align: center;
+}
+
+@media (max-width: 1200px) {
+  .aviso-container {
+    margin: 0px 20px;
+  }
+  .aviso-conteudo p {
+    font-size: 0.8rem;
+  }
+}
+@media (max-width: 800px) {
+  .aviso-bg {
+    display: none;
+  }
+}
